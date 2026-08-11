@@ -255,7 +255,7 @@ positivity at the same scale. The sPoRT algorithm can handle long-format
 datasets as well. But first, we need to define the lagged values of the
 treatment (for subseting on A\_t-1=0).
 
-    simdata$Alag_1 <- 1
+    simdata$Alag_1 <- 0
         simdata$Alag_2 <-simdata$A_1
         simdata$Alag_3 <-simdata$A_2
         simdata$Alag_4 <-simdata$A_3
@@ -751,4 +751,4 @@ Trees. 2019. <https://CRAN.R-project.org/package=rpart> (20 October
 
 ### Updates history
 
-First update planned for the release of the `port` package.
+(2026-08-11) Fixed the following typo on line 258: *simdata$Alag_1 <- 1* becames *simdata$Alag_1 <- 0* 
